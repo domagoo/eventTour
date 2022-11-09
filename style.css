@@ -1,0 +1,611 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Oswald";
+}
+
+/* !Social Media Section! */
+/*!*************************
+!***************************!*/
+/* ! --------------------  ! */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0px;
+  z-index: 10;
+  background: #ffffff;
+}
+
+header .connect {
+  position: relative;
+  color: #de53f3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header .social {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  width: 1900px;
+  cursor: pointer;
+}
+
+header .social li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.header .social img {
+  font-weight: 500;
+}
+
+header .search {
+  position: relative;
+  background: rgba(135, 135, 135, 0.2);
+  border-radius: 10px;
+  width: 30rem;
+  height: 2rem;
+  margin-left: 10px;
+}
+
+header .search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  outline: none;
+  background: transparent;
+  border: 0;
+  padding-left: 10px;
+}
+
+header .search input::-moz-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+header .search input:-ms-input-placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+header .search input::placeholder {
+  color: #000000;
+  font-weight: bold;
+}
+
+header .Login {
+  position: relative;
+  background-color: #de53f3;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 170px;
+  height: 40px;
+}
+
+header .Login img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: solid #ffffff;
+  margin-left: 5px;
+}
+
+/* !Navbar !Section! */ /*!*************************
+!***************************!*/
+/* ! --------------------  ! */
+.nav_container {
+  width: 100%;
+  background-color: #000000;
+  margin-top: 50px;
+  position: relative;
+  z-index: 11;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+#chContainer {
+  margin-right: 80px;
+  margin-top: -55px;
+  height: 5rem;
+  background: linear-gradient(45deg, #000000, rgb(96, 96, 96));
+}
+
+.chVenue {
+  justify-self: start;
+  margin: 25px 10px 25px 10px;
+}
+
+.chVenue {
+  cursor: pointer;
+}
+
+.chVenue {
+  cursor: pointer;
+}
+
+.navbar_menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  justify-self: end;
+}
+
+.nav_links {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Oswald";
+  text-transform: uppercase;
+}
+
+.nav_links:hover {
+  color: #de53f3;
+  transition: all 0.2s ease-out;
+}
+
+.menu_toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+  background: #ffffff;
+}
+
+/*! MENU SECTION */
+/*!*************************
+!***************************!*/
+/* ! --------------------  ! */
+.main_event {
+  background-color: #e5e5e5;
+  min-height: 100vh;
+  padding: 0 80px;
+}
+
+.main_container {
+  position: relative;
+  /* display: flex;
+  max-width: 100%; */
+}
+
+.upcoming_events {
+  font-family: "Oswald";
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: solid #000000;
+  padding: 20px 0 20px 0;
+  font-size: 26px;
+}
+
+.icon_container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: end;
+  align-self: end;
+}
+
+.icon_container .dot_menu {
+  /* ! might change width below ! */
+  width: 32.5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: solid #ffffff;
+}
+
+.icon_container .dot_menu .dot {
+  background-color: #de53f3;
+  padding: 2.5px;
+  margin: 2px;
+}
+
+.icon_container .drop_down2 {
+  display: block;
+  cursor: pointer;
+  margin: 0 0 0 20px;
+}
+
+.icon_container .bar2 {
+  display: block;
+  min-width: 25px;
+  min-height: 5px;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+  border-radius: 1px;
+}
+
+/*! Event Details !*/
+/*!*************************
+!***************************!*/
+/* ! --------------------  ! */
+.artist_event {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 13rem;
+}
+
+.event_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0 0 6rem 0;
+}
+
+.event_item .photo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.event_item .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.event_item:hover .photo img {
+  transform: scale(1.5);
+}
+
+.event_detail .date_container {
+  background-color: #000000;
+}
+
+.event_detail .date_info {
+  height: 25px;
+}
+
+.event_detail .date_info p {
+  color: #de53f3;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  margin: 0px 0px 0px 5px;
+}
+
+.event_detail .banner_text {
+  opacity: 1;
+  position: absolute;
+  top: 101.5%;
+  left: 97%;
+  background-color: rgb(50, 50, 50);
+  transform: translate(-90%, -50%);
+  color: #de53f3;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  -webkit-clip-path: polygon(0 0%, 100% 0%, 100% 100%, 14% 100%);
+          clip-path: polygon(0 0%, 100% 0%, 100% 100%, 14% 100%);
+  width: 88px;
+  padding-left: 20px;
+}
+
+.event_detail .ticket_container {
+  display: none;
+}
+
+.event_detail .tour_container {
+  height: 100px;
+  row-gap: 0;
+  padding: 20px 0 0 0px;
+  background-color: #ffffff;
+}
+
+.event_detail .event-artist {
+  color: #de53f3;
+  font-family: "Oswald";
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.event_detail .tour-name {
+  color: #000000;
+  font-family: "Merriweather";
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: center;
+  margin: -10px 0 0 0;
+}
+
+/* ! SignUp Section ! */
+/*!*************************
+!***************************!*/
+/* ! --------------------  ! */
+.Signup_Container {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  margin: 12rem -2rem 2rem -2rem;
+}
+
+.signUp_pic {
+  width: 100%;
+  min-height: 25rem;
+}
+
+.signUp_post {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 42rem;
+  min-height: 15rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 0 0 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.signUp_post h1 {
+  font-family: "Oswald";
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.signUp_post p {
+  font-family: "Merriweather";
+  color: #de53f3;
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.signUp_post button {
+  margin: 25px 0 0 0;
+  border: solid #ffffff;
+  min-width: 13rem;
+  min-height: 3rem;
+  background-color: transparent;
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: medium;
+  cursor: pointer;
+}
+
+/* ! Media Query ! */
+/*!*************************
+!***************************!*/
+/* ! --------------------  ! */
+@media screen and (max-width: 800px) {
+  header {
+    display: none !important;
+  }
+  .nav_container {
+    margin-top: 0;
+    position: relative;
+  }
+  .navbar_menu {
+    display: grid;
+    grid-template-columns: auto;
+    background: var(--pinkShade);
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  #chContainer {
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 70px;
+  }
+  .chVenue {
+    margin-left: 20px;
+    justify-self: start;
+    margin: 10px 1px 10px 1px;
+  }
+  .navbar_menu:active {
+    background: var(--pinkShade);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5 ease;
+  }
+  .nav_links {
+    text-align: center;
+    line-height: 60px;
+    display: table;
+    width: 100%;
+  }
+  .nav_links:hover {
+    background-color: #de53f3;
+    color: #ffffff;
+  }
+  .navbar {
+    width: 100%;
+  }
+  #mobile_menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(20%, 5%);
+  }
+  .menu_toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+  .menu_toggle:hover {
+    cursor: pointer;
+  }
+  /* ! Social Media ! */
+  /*!*************************
+  !***************************!*/
+  /* ! --------------------  ! */
+  .header_box {
+    display: none;
+  }
+  /* ! Event-Tour Section! */
+  /*!*************************
+  !***************************!*/
+  /* ! --------------------  ! */
+  .main_event {
+    padding: 0 25px;
+  }
+  .icon_container {
+    display: none;
+  }
+  .drop_down2 {
+    display: none;
+  }
+  .dot_menu {
+    display: none;
+  }
+  .upcoming_events {
+    font-family: "Oswald";
+    margin-bottom: 30px;
+    border-bottom: solid #000000;
+    justify-content: center;
+    font-size: 26px;
+  }
+  .artist_event {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+  }
+  .event_detail {
+    width: 100%;
+    background-color: #ffffff;
+    max-height: 12.3rem;
+    margin: 0px 0 -180px 0;
+  }
+  .event_item .photo {
+    width: 6.5rem;
+    position: relative;
+    z-index: 1;
+    margin: 5px 5px;
+  }
+  .event_item .tour_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: start;
+    align-items: start;
+    margin: 0 0 0 0px;
+    padding-left: 110px;
+    width: 100%;
+    height: 6rem;
+  }
+  .event_detail .event-artist {
+    color: #de53f3;
+    font-family: "Oswald";
+    font-size: 20px;
+    margin: -20px 0 0 0;
+    text-transform: uppercase;
+    width: 7rem;
+  }
+  .event_detail .tour-name {
+    color: #000000;
+    font-family: "Merriweather";
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: start;
+    margin: -5px 0 0 0;
+    width: 8rem;
+  }
+  .event_detail .date_container {
+    width: 100%;
+    height: 47px;
+    justify-content: center;
+  }
+  .event_detail .date_info {
+    padding-top: 3px;
+  }
+  .event_detail .date_info p {
+    color: #de53f3;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    margin: 5px 0px 0px 0px;
+  }
+  .event_detail .banner_text {
+    opacity: 1;
+    position: absolute;
+    top: 114px;
+    left: 230px;
+    height: 50px;
+    z-index: 1;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .event_detail .ticket_container {
+    display: flex;
+    background-color: #de53f3;
+    width: 100%;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .event_detail .ticket_container p {
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-left: 15px;
+  }
+  /* !Sign-up Section! */
+  /*!*************************
+  !***************************!*/
+  /* ! --------------------  ! */
+  .signUp_post {
+    min-height: 18rem;
+  }
+  .signUp_post h1 {
+    font-size: 2.5rem;
+    margin-left: 180px;
+    margin-top: -15px;
+    width: 20rem;
+  }
+  .signUp_post p {
+    margin-left: 210px;
+    width: 15rem;
+  }
+  .signUp_post button {
+    margin: 20px 0 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
