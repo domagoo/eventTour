@@ -6,17 +6,17 @@ Overlay of Artist
  * Artist Tour Name
  * Artist Name
 
-#Artist-Tour-Date
+**Artist-Tour-Date**
 ______________________________________________________________________________________________________________________________________________________________
 
 Banner displaying the exact tour date of artist
 
-#Artist-Tour-Name
+**Artist-Tour-Name**
 ______________________________________________________________________________________________________________________________________________________________
 
 Header displaying the tour name of said tour
 
-#Artist-Name
+**Artist-Name**
 ______________________________________________________________________________________________________________________________________________________________
 
 Header displaying the artist name of the event/concert
